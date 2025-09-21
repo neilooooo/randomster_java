@@ -1,0 +1,28 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h2>Classes in JavaScript or smth </h2>
+        <p>How to use JavaScript classes or smth</p>
+        <p id="random1"></p>
+        <p id="random2"></p>
+        <script>
+            class Student{
+                constructor(name,year,score,random_stuff)
+                {
+                    this.name=name
+                    this.year=year
+                    this.score=score
+                    this.random_stuff=random_stuff
+                }
+                getage(){
+                    var date=new Date()
+                    return date.getFullYear()-this.year
+                }
+            }
+            student1=new Student("Random Person",2014,67,"i am a random person who is very random")
+document.getElementById("random1").innerHTML=student1.random_stuff
+document.getElementById("random2").innerHTML=student1.getage()
+        </script>
+    </body>
+</html>
